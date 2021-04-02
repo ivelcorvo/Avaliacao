@@ -1,0 +1,353 @@
+:root{
+    --cor1: #f2f2f2;
+    --cor2: #fff;
+    --cor3: #878787;
+    --corFundo: #F9F9F9;
+    --corPalavraMenu: #4a4a4a;
+    --corPalavraMenu2: #000000;
+    --corPalavraMenu3: #878787;
+    --corBorda: #ECECEC;
+    --corPesquiza: #ED1C24;
+    --grifado: #1CED31;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+}
+
+body{
+    background-color: var(--corFundo);
+}
+
+.img-responsiva{
+    width: 100%;
+    height: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.margin{
+    margin-right: 5px;
+}
+
+.margin-2{
+    margin-left: 10px;
+}
+
+.top{
+    margin-top: 20px;
+}
+
+.top2{
+    margin-top: 50px;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.bottom{
+    margin-bottom: 20px;
+}
+
+.padding-x2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.padding-x1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.conteiner{
+    width: 98%;
+    margin: auto;
+}
+
+.conteiner2{
+    width: 90%;
+    margin: auto;
+}
+
+.conteiner3{
+    width: 80%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.space{
+    justify-content: space-between;
+}
+.araund{
+    justify-content: space-around;
+}
+
+.direita{
+    align-items: right;
+}
+
+.branco{
+    color: var(--cor2);
+}
+/* ============================================================ */
+.banner-1{
+    width: 100%;
+    height: 42px;
+    background-color: var(--cor1) ;
+}
+
+.vermelho{
+    color: var(--corPesquiza);
+}
+
+/* ============================================================ */
+.banner-2{
+    width: 100%;
+    height: 162px;
+    background-color: var(--cor2);
+    padding-top: 20px;
+}
+
+.pesquisa{
+    margin: 15px;
+}
+
+.campo-pesquisa{
+    width: 620px;
+    height: 47px;
+    border: none;
+    
+}
+
+.pesquisa-wrapper{
+    width: 709px;
+    height: 49px;
+    padding-left: 25px;
+    border: 1px solid var(--corBorda);
+    border-top-left-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;        
+}
+.icone-pesqisa a{
+    text-decoration: none;
+}
+.icone-pesqisa a i{
+    color: var(--cor2);
+    text-align: center;
+    display: block;
+    width: 86px;
+    background-color: var(--corPesquiza);
+    border-radius:0 30px 30px 0;
+    line-height: 49px;
+}
+
+/* ------------------------------ */
+.grup-banner{
+    height: 50px;
+    
+}
+
+.grup-banner i{
+    color: var(--corPalavraMenu3);
+}
+
+.grup-banner a{ 
+    width: 170px;   
+    height: 50px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--corPalavraMenu3);
+    display: block;
+    padding-left: 50px;
+    left: -40px;
+    position: relative;
+}
+
+/* ============================================================ */
+/* menu */
+
+.part{
+    width: 27%;
+}
+
+.part ul.menu{
+    list-style-type: none;
+    height: 42px;
+    line-height: 42px;
+}
+
+.part ul.menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+}
+.cinza li a{
+    color: var(--corPalavraMenu);
+}
+.preto li a {
+    color: var(--corPalavraMenu2);
+}
+
+/* --------------------------------- */
+ul.menu{
+    list-style-type: none;
+    height: 42px;
+    line-height: 42px;
+}
+
+ul.menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+}
+.cinza li a{
+    color: var(--corPalavraMenu);
+}
+.preto li a {
+    color: var(--corPalavraMenu2);
+}
+
+a .preto{
+    color: var(--corPalavraMenu2);
+}
+
+.diferente{
+    color: var(--corPalavraMenu2);
+    text-decoration: none;
+    background-color: var(--corPesquiza);
+    padding: 0 20px;
+    border-radius: 30px 0 0 30px;
+}
+
+/* =============================================================== */
+
+.n1{
+    text-align: center; 
+    width: 49.5%;
+    background-color: var(--cor2);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    box-shadow: 0px 0px 10px #00000014;
+    padding: 10px;
+}
+
+.n1 p{    
+    font-size: 20px;
+    color: var(--corPalavraMenu);
+}
+
+.n1 p a{
+    color: #3c00ac
+}
+
+/* =============================================================== */
+
+.icon-grup figure .icon{
+    width: 100px;   
+    height: 100px;    
+    background-color: var(--cor2);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+} 
+.icon-grup figure .icon i{ 
+    position: relative;
+    top: 30px;
+}
+
+.icon-grup figure{
+    text-align: center;   
+}
+
+/* =============================================================== */
+
+
+section span{
+    color: var(--corPalavraMenu);
+}
+
+.item-artigo{
+    width: 25%;
+    height: auto;
+    margin: 20px;
+}
+
+/* ------------------------ */
+.item-artigo2{
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--cor2);
+}
+
+.item-artigo2 s{
+    color: var(--corPalavraMenu3)
+}
+
+.grifado{
+    background-color: var(--grifado);
+    color: var(--cor2)
+}
+
+/* ------------------------ */
+.full{
+    padding-left: 57px;
+    padding-right: 56px;
+}
+
+.item-artigo3{
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    background-color: var(--cor2);
+    border-bottom: 2px solid var(--grifado) 
+}
+
+/* ================================================================== */
+/* footer */
+
+.banner-footer{
+    width:  100%;
+    height: 180px;
+    background-color: var(--corPesquiza);
+}
+    
+.regulamento1{
+    background-color: var(--corPalavraMenu2);
+    padding-left: 1100px;
+}
+
+.regulamento1 a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.regulamento1 p a{
+    text-decoration: none;
+    color: var(--cor2);
+    margin: 20px 10px 0;
+}
+
+.regulamento2 blockquote {
+    color: var(--cor3);
+}
