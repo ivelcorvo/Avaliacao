@@ -370,8 +370,8 @@ section span{
 
 /* ------------------------ */
 .full{
-    padding-left: 58px;
-    padding-right: 57px;
+    width: 100%;
+    background-color: var(--grifado);
 }
 
 .item-artigo3{
