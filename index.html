@@ -7,7 +7,7 @@
         <meta name="robots" content="index, nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>avaliação</title>
+        <title>Avaliação</title>
         <link rel="stylesheet" type="text/css" href="_css/estilo.css">
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -36,10 +36,12 @@
                         <img src="_img/logo.png">
                     </div>
                     <div class="pesquisa flex">
-                        <div class="pesquisa-wrapper flex">
-                            <input type="text" id="pesquisa" name="pesquisa" value="" placeholder="     BUSQUE NA LOJA" class="campo-pesquisa">
-                            <div class="icone-pesqisa"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
-                        </div>
+                        <form action="" method="post">
+                            <div class="pesquisa-wrapper flex">
+                                <input type="text" id="pesquisa" name="pesquisa" value="" placeholder="     BUSQUE NA LOJA" class="campo-pesquisa">
+                                <div class="icone-pesqisa"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                            </div>
+                        </form>
                     </div>
                     <div class="row flex">                            
                             <!-- <li><a href="#">LISTA DE FAVORITOS</a></li>
@@ -48,10 +50,11 @@
                             <i class="fa fa-user fa-2x" aria-hidden="true"></i><a href="#" ><p>ENTRAR MINHA CONTA</p></a>
                         </div>                              
                         <div class="grup-banner flex top">
-                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i><a href="#" ><p>ENTRAR MINHA CONTA</p></a>
+                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i><a href="#" ><p>LISTA DE FAVORITOS</p></a>
                         </div>   
-                        <div class="grup-banner flex top">
-                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><a href="#" ><p>ENTRAR MINHA CONTA</p></a>
+                        <div class="grup-banner flex top center">
+                            <span class="carrinho">99</span>
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><a href="#" ><p>CARRINHO DE COMPRAS</p></a>
                         </div>                               
                     </div>
                 </div>
@@ -72,18 +75,21 @@
         
         <div class="banner-principal">
             <img src="_img/banner-desktop.jpg" alt="banner" class="img-responsiva">
+            <div class="veja-mais">
+                <a href="#">Veja mais</a>
+            </div>
         </div>
 
         <div class="row padding-x2 flex space conteiner">
             <div class="n1">
-                <p><strong>Clique e retire.</strong><i class="margin margin-2 vermelho fa fa-map-marker fa-2x" aria-hidden="true"></i> Suas compras em qualquer loja A Potiguar</p>
+                <p><strong><a class="link1" href="#">Clique e retire.</a></strong><i class="margin margin-2 vermelho fa fa-map-marker fa-2x" aria-hidden="true"></i> Suas compras em qualquer loja A Potiguar</p>
             </div>
             <div class="n1">
-                <p><strong>Seu produto em <strong>até 2 horas</strong>.<i class="margin margin-2 vermelho fa fa-truck fa-2x" aria-hidden="true"></i></i><a href="#">Clique aqui</a> e sabia mais</p>
+                <p><strong>Seu produto em <strong>até 2 horas</strong>.<i class="margin margin-2 vermelho fa fa-truck fa-2x" aria-hidden="true"></i></i><a class="link2" href="#">Clique aqui</a> e sabia mais</p>
             </div>
         </div>
 
-        <div class='icon-grup conteiner2 flex space '>
+        <div class='icon-grup conteiner2 flex space'>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
@@ -93,51 +99,50 @@
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Cozinha</p>
                 </figcaption>
             </figure>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Ar Condicionado</p>
                 </figcaption>
             </figure>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Verão e Jardim</p>
                 </figcaption>
             </figure>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Home Office</p>
                 </figcaption>
             </figure>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Iluminação</p>
                 </figcaption>
             </figure>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Eletrodomésticos</p>
                 </figcaption>
             </figure>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
-                    <p>Banheiro</p>
+                    <p>Brinquedos</p>
                 </figcaption>
             </figure>
-
         </div>
 
         <div class="row top2">
             <section class="conteiner">
-                <span class="titulo ">Ofertas especiais por tempo limitado</span>
+                <span class="titulo ">Seleção especial para você</span>
                 <div class="atigos flex">
                     <article class="item-artigo">
                         <figure>
@@ -151,7 +156,7 @@
                         <figure>
                             <img src="_img/code-2.jpeg" class="img-responsiva">
                             <figcaption class="center">
-                                <span>Utensílios domésticos</span>
+                                <span>Mesa e Decoração</span>
                             </figcaption>
                         </figure>
                     </article>
@@ -159,7 +164,7 @@
                         <figure>
                             <img src="_img/code-2.jpeg" class="img-responsiva">
                             <figcaption class="center">
-                                <span>Utensílios domésticos</span>
+                                <span>Cozinha</span>
                             </figcaption>
                         </figure>
                     </article>
@@ -167,17 +172,18 @@
                         <figure>
                             <img src="_img/code-2.jpeg" class="img-responsiva">
                             <figcaption class="center">
-                                <span>Utensílios domésticos</span>
+                                <span>Organização</span>
                             </figcaption>
                         </figure>
                     </article>
                 </div>
             </section>
         </div>
-<!-- =========================================== -->
+
         <div class="row top2">
             <section class="conteiner">
                 <span class="titulo ">Ofertas especiais por tempo limitado</span>
+                <span class="mostrar-mais"><a href="#">Ver todos<i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
                 <div class="atigos2 flex top">
                     <article class="item-artigo3">
                         <span class="grifado full">EXCLUSIVO NO SITE</span>
@@ -241,7 +247,8 @@
 
         <div class="row top2">
             <section class="conteiner">
-                <span class="titulo ">Ofertas especiais por tempo limitado</span>
+                <span class="titulo ">Eletros em até 10x sem juros</span>
+                <span class="mostrar-mais"><a href="#">Ver todos<i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
                 <div class="atigos2 flex top">
                     <article class="item-artigo2">
                         <figure>
@@ -302,9 +309,38 @@
             </section>
         </div>
 
+        <div class="row conteiner">
+            <div class="banners flex wrap space top2">
+                <div class="b1 flex">
+                    <div class="logo2 flex">
+                        <img src="_img/logo2.png"><div class="empresa"><span>Empresas</span></div>
+                    </div>
+                    <div class="anuncio">
+                        <span>As melhores ofertas para a sua empresa</span><br>
+                        <p>Confira nossas condições especiais para compras utilizando CNPJ</p>
+                    </div>
+                </div>
+                <div class="b2 flex">
+                    <div class="pic"><img src="_img/fogo.jpg" class="img-responsiva"></div>
+                    <div Class="preco-anuncio">
+                        <p>Lavadora de roupas 12kg<br>Brastemp 220v<br><span class="titulo branco">R$ 1.699,00</span><br>Em até 12x sem juros</p>
+                    </div>
+                    <div class="mais"><p>+</p></div>
+                    <div class="frete"><p>Frete<br>grátis</p></div>
+                </div>
+                <div class="b3">
+                    <div class="aulas"><samp class="titulo branco">Volta as aulas</span></div>
+                    <div class="confira">                        
+                        <a href="#">Confira</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row top2">
             <section class="conteiner">
-                <span class="titulo ">Ofertas especiais por tempo limitado</span>
+                <span class="titulo ">Os mais desejados</span>
+                <span class="mostrar-mais"><a href="#">Ver todos<i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
                 <div class="atigos2 flex top">
                     <article class="item-artigo2">
                         <figure>
@@ -366,9 +402,25 @@
             </section>
         </div>
 
+        <div class="row conteiner">
+            <div class="banner-final top2 flex">
+                <div class="eletro-sale">
+                    <div class="eletro"><span class="titulo2 rosa">ELETRO</span></div>
+                    <div class="sale"><span class="titulo2 rosa">SALE</span></div>
+                </div>
+                <div class="desconto">
+                    <span class="titulo branco">Tudo com <br>até 60% off</span>
+                    <div class="comprar">                        
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row top2">
             <section class="conteiner">
-                <span class="titulo ">Ofertas especiais por tempo limitado</span>
+                <span class="titulo ">Os mais vendidos</span>
+                <span class="mostrar-mais"><a href="#">Ver todos<i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
                 <div class="atigos2 flex top">
                     <article class="item-artigo2">
                         <figure>
@@ -432,23 +484,157 @@
         </div>
 
         <footer>
-            <div class="banner-footer top">
-
-            </div>   
-            <div class="footer-wrapper padding-x2">
-
+            <div calss="row conteiner">
+                <div class="banner-footer top">
+                    <div class="email flex conteiner">
+                        <div class="n2-diferente">
+                            <span class="titulo branco">Fique por dentro das novidades</span><br><br>
+                            <blockquote class="oferta1"> Você tem 10% OFF* com o cupom BOASVINDAS para sua primeira compra acima de R$ 150.</blockquote><br>
+                            <blockquote class="oferta2">*Desconto válido apenas para produtos vendidos e entregues por A Potiguar exceto eletro, e um uso por CPF.</blockquote><br>
+    
+                        </div>
+                        <div class="n2">
+                            <form action="" method="post">
+                                <div class="email-wrapper flex">
+                                    <input type="text" id="email" name="email" value="" placeholder="     DIGITE SEU MELHOR E-MAIL" class="campo-email">
+                                    <button class="btn-email" type="submit">CADASTRAR</button>                                        
+                                </div><br>
+                                <div class="checkbox">
+                                    <input type ="checkbox" id="check"><label class="lbl-chek" for="check">LI ACEITO OS TERMOS DA PRIVACIDADE</label>
+                                </div>
+                            </form>
+                        </div>                    
+                    </div>
+                </div>   
+                <div class="footer-wrapper padding-x2 conteiner flex">
+                    <div class="pedidos flex space">
+                        <div>
+                            <div class="pedido flex">
+                                <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
+                                <div><p>Acompanhar<br>pedido</p></div>
+                            </div>
+                            <div class="pedido flex">
+                                <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
+                                <div><p>Troca e<br>devoluções</p></div>
+                            </div>
+                            <div class="pedido flex">
+                                <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
+                                <div><p>Tire sua dúvida<br>fale conosco</p></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="pedido flex">
+                                <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
+                                <div><p>Chat<br>online</p></div>
+                            </div>
+                            <div class="pedido flex">
+                                <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
+                                <div><p>Nossas<br>lojas</p></div>
+                            </div>
+                            <div class="pedido margin2 flex">
+                                <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
+                                <div><p>Trabalhe<br>conosco</p></div>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="institucional">
+                        <span>Institucional</span><br><br>
+                        <ul class="menu-institucional">   
+                            <li><a href="#">Sobre a Velty</a></li>
+                            <li><a href="#">Nossas lojas</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Trocas e Devoluções</a></li>
+                            <li><a href="#">Entregas</a></li>     
+                            <li><a href="#">Contato</a></li>                       
+                        </ul>
+                    </div>                    
+                    <div class="icones-finais">
+                        <div class="formas-pagamento">
+                            <span >Formas de pagamento</span><br><br>
+                            <div class="cartoes flex wrap ">
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="cartao">
+                                    <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="selos">
+                                    <span>Selos e certificados</span><br><br>
+                                    <div class="dois flex space">
+                                        <div class="selo">
+                                            <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="selo">
+                                            <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="redes">
+                                    <span>Siga A Potiguar nas mídias</span><br><br>
+                                    <div class="sociais flex space">
+                                        <div class="social">
+                                            <a href="#"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="social">
+                                            <a href="#"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="social">
+                                            <a href="#"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="social">
+                                            <a href="#"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+    
+                </div>
+                <div class="regulamento1 flex padding-x1 araund">
+                   <div><p><a href="#">Tech e Desenvolvimento</a></p></div> 
+                   <div><a href="#"><img src="_img/logo_svg-03.svg"></a></div>
+                   <div><a href="#"><img src="_img/Group 38.svg "></a></div>    
+                              
+                </div>
+                <div class="regulamento2 padding-x2 conteiner3">
+                    <blockquote class="center">
+                        Copyright ©2020 TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto imagem, layout, aqui veiculados são de propriedade exclusiva da VELTY. É vedada qualquer reprodução, total ou parcial, de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos da Lei. WGM TECNOLOGIA DO BRASIL LTDA - CNPJ: 11.976.873/0001-50 - Avenida Miguel Castro, 600, Natal/RN - 84 3082-1757
+                    </blockquote>
+                </div>  
             </div>
-            <div class="regulamento1 flex padding-x1 araund">
-               <div><p><a href="#">Tech e Desenvolvimento</a></p></div> 
-               <div><a href="#"><img src="_img/logo_svg-03.svg"></a></div>
-               <div><a href="#"><img src="_img/Group 38.svg "></a></div>    
-                          
-            </div>
-            <div class="regulamento2 padding-x2 conteiner3">
-                <blockquote class="center">
-                    Copyright ©2020 TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, software, conjunto imagem, layout, aqui veiculados são de propriedade exclusiva da VELTY. É vedada qualquer reprodução, total ou parcial, de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos da Lei. WGM TECNOLOGIA DO BRASIL LTDA - CNPJ: 11.976.873/0001-50 - Avenida Miguel Castro, 600, Natal/RN - 84 3082-1757
-                </blockquote>
-            </div>  
         </footer>
 
         

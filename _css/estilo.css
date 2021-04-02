@@ -2,6 +2,7 @@
     --cor1: #f2f2f2;
     --cor2: #fff;
     --cor3: #878787;
+    --cor4: #FFCFD1;
     --corFundo: #F9F9F9;
     --corPalavraMenu: #4a4a4a;
     --corPalavraMenu2: #000000;
@@ -9,6 +10,7 @@
     --corBorda: #ECECEC;
     --corPesquiza: #ED1C24;
     --grifado: #1CED31;
+    --btnCor: #D7DF23;
 }
 
 *{
@@ -21,6 +23,10 @@
 
 body{
     background-color: var(--corFundo);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .img-responsiva{
@@ -58,6 +64,10 @@ body{
 
 .titulo{
     font-size: 30px;
+}
+
+.titulo2{
+    font-size: 60px;
 }
 
 .bottom{
@@ -100,6 +110,10 @@ body{
     justify-content: space-around;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .direita{
     align-items: right;
 }
@@ -126,6 +140,19 @@ body{
     padding-top: 20px;
 }
 
+.banner-2 .carrinho{
+    width: 22px;
+    height: 22px;
+    padding-top:3px;
+    background-color: var(--corPesquiza);
+    color: var(--cor4);
+    border-radius: 100%;;
+    position: relative;
+    right: -45px;
+    top: -5px
+
+}
+
 .pesquisa{
     margin: 15px;
 }
@@ -133,8 +160,7 @@ body{
 .campo-pesquisa{
     width: 620px;
     height: 47px;
-    border: none;
-    
+    border: none;    
 }
 
 .pesquisa-wrapper{
@@ -142,9 +168,9 @@ body{
     height: 49px;
     padding-left: 25px;
     border: 1px solid var(--corBorda);
-    border-top-left-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;        
+    border-radius: 30px; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
 }
 .icone-pesqisa a{
     text-decoration: none;
@@ -161,8 +187,7 @@ body{
 
 /* ------------------------------ */
 .grup-banner{
-    height: 50px;
-    
+    height: 50px;    
 }
 
 .grup-banner i{
@@ -185,7 +210,7 @@ body{
 /* menu */
 
 .part{
-    width: 27%;
+    width: 30%;
 }
 
 .part ul.menu{
@@ -238,6 +263,23 @@ a .preto{
 }
 
 /* =============================================================== */
+/* banner-principal */
+.veja-mais{
+    width: 90px;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top:350px;
+    right: 300px;
+    
+}
+
+.veja-mais a{
+    text-decoration: none;
+    color: var(--corPalavraMenu)
+}
+/* =============================================================== */
 
 .n1{
     text-align: center; 
@@ -255,15 +297,20 @@ a .preto{
     color: var(--corPalavraMenu);
 }
 
-.n1 p a{
+.n1 p .link1{
+    color: var(--corPalavraMenu);
+    text-decoration: none;
+}
+
+.n1 p .link2{
     color: #3c00ac
 }
 
 /* =============================================================== */
 
 .icon-grup figure .icon{
-    width: 100px;   
-    height: 100px;    
+    width: 90px;   
+    height: 90px;    
     background-color: var(--cor2);
     border-radius: 100%;
     -webkit-border-radius: 100%;
@@ -278,8 +325,20 @@ a .preto{
     text-align: center;   
 }
 
+.icon-grup figure .icon i{
+    color: var(--corPalavraMenu3)
+}
+.icon-grup figure figcaption p{
+    color: var(--corPalavraMenu3)
+}
+
 /* =============================================================== */
 
+span.mostrar-mais a{
+    text-decoration: none;
+    color: var(--corPalavraMenu);
+    margin-left: 1350PX;
+}
 
 section span{
     color: var(--corPalavraMenu);
@@ -311,8 +370,8 @@ section span{
 
 /* ------------------------ */
 .full{
-    padding-left: 57px;
-    padding-right: 56px;
+    padding-left: 58px;
+    padding-right: 57px;
 }
 
 .item-artigo3{
@@ -321,6 +380,142 @@ section span{
     margin: 10px;
     background-color: var(--cor2);
     border-bottom: 2px solid var(--grifado) 
+}
+
+/* ================================================================== */
+/* banners aleatórios */
+
+.b1{
+    width: 100%;
+    height: 156px;
+    background-color: var(--corPesquiza);
+}
+
+.logo2{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 20px 0 35px;
+ }
+
+.logo2 .empresa{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.logo2 .empresa span{
+    color: var(--cor2);
+    font-size: 20px;
+}
+
+.anuncio{
+    padding: 45px 160px;
+}
+
+.anuncio span{
+    font-size: 40px;
+    color: var(--cor2);
+}
+
+.anuncio p{
+    color: var(--cor2);
+}
+
+/* ------------------ */
+
+.b2{
+    width: 49%;
+    height: 156px;
+    background-color: var(--corPesquiza);
+    margin-top: 10px;
+}
+
+.b2 .pic{
+    width: 130px;
+    margin: 15px;
+}
+
+.b2 .preco-anuncio{
+    margin-top: 30px;
+}
+
+.b2 .preco-anuncio p{
+    color: var(--cor2);
+}
+
+.b2 .mais p{
+    margin-top: 45px;
+    margin-left: 5px;
+    font-size: 60px;
+    color: var(--cor2);
+}
+
+.b2 .frete p{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 45px;
+    color: var(--cor2);
+}
+
+/* ----------------------- */
+
+.b3{
+    width: 49%;
+    height: 156px;
+    margin-top: 10px;
+    background-color: #497dc2 ;
+}
+
+.b3 .aulas{
+    margin: 20px;
+}
+
+.b3 .confira{
+    width: 80px;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    top: 30px;
+    right: -100px;
+}
+
+.b3 .confira a{
+    text-decoration: none;
+    color: var(--corPalavraMenu)
+}
+
+/* ================================== */
+/* banner final */
+.banner-final{
+    width: 100%;
+    height: 207px;
+    background-color: #497dc2 ;
+}
+
+.rosa{
+    color: var(--cor4)
+}
+
+.eletro-sale{
+    margin-left: 700px; 
+    margin-top: 20px;
+}
+
+.desconto{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.banner-final .comprar{
+    width: 90px;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.banner-final .comprar a{
+    text-decoration: none;
+    color: var(--corPalavraMenu)
 }
 
 /* ================================================================== */
@@ -350,4 +545,138 @@ section span{
 
 .regulamento2 blockquote {
     color: var(--cor3);
+}
+/*===============================================*/
+/* rodape com cadastro de email */
+
+.n2-diferente{
+    padding: 20px 10px  2px;
+    margin-right: 100px;
+}
+
+.n2-diferente blockquote.oferta1{
+    font-size:  15px;
+    color: var(--cor2);
+}
+.n2-diferente blockquote.oferta2{
+    font-size:  12.5px;
+    color: var(--cor2);
+}
+
+.n2{
+    padding: 60px 5px 2px
+}
+
+.email{
+    margin: 15px;
+}
+
+.campo-email{
+    width: 709px;
+    height: 47px;
+    border: none; 
+    border-radius: 30px  0  0 30px;
+    -webkit-border-radius: 30px  0  0 30px;
+    -moz-border-radius: 30px  0  0 30px;
+}
+
+.btn-email{
+    color: var(--corPalavraMenu2);
+    background-color: #D7DF23;
+    text-align: center;
+    width: 126px;
+    border-radius:0 30px 30px 0;
+    -webkit-border-radius:0 30px 30px 0;
+    -moz-border-radius:0 30px 30px 0;
+    border: none;
+}
+
+.email-wrapper{
+    width: 609px;
+    height: 49px;        
+    border: 1px solid var(--corBorda);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;        
+}
+
+.lbl-chek{    
+    font-size: 10px;
+    color: var(--cor2);
+}
+#check{
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;       
+}
+
+/*===============================================*/
+/* rodape com vários icones */
+
+.pedidos{
+    flex-wrap: wrap;
+    width: 25%;    
+    margin-right: 130px;
+}
+
+.pedido{
+    margin-bottom: 40px;
+}
+
+.pedido i{
+    color:var(--cor3);
+}
+.pedido p{
+    color: var(--corPalavraMenu2);
+}
+
+.institucional{
+    width: 30%;
+}
+.institucional span{
+    font-size: 20px;
+}
+
+ul.menu-institucional{
+    list-style-type: none;
+}
+
+ul.menu-institucional li{
+    margin-bottom: 10px;
+}
+
+ul.menu-institucional li a{
+    text-decoration: none;
+    color: var(--corPalavraMenu2);
+}
+
+.icones-finais{
+    width:40%;
+    
+}
+
+.formas-pagamento span{
+    font-size: 20px;
+}
+
+.formas-pagamento .cartoes .cartao{
+    padding:10px;
+}
+
+.dois{
+    width: 60%;
+}
+
+.redes{
+    width: 60%;
+    margin-left: 20px;
+}
+
+.social a{
+    text-decoration: none;
+    color: var(--corPalavraMenu2);
 }
