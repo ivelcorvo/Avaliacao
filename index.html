@@ -14,14 +14,14 @@
     </head>
     <body>
         <header>
-            <div class="banner-1 flex space">
-                <div class="part flex space">
+            <div class="Menu-topo flex between">
+                <div class="part1 flex between">
                     <ul class="menu flex cinza">
                         <li><a href="#"><i class="margin vermelho fa fa-map-marker" aria-hidden="true"></i>VOCÊ ESTÁ EM: <strong>IMPERATRIZ</strong></a></li>
                         <li><a href="#"><i class="margin vermelho fa fa-retweet" aria-hidden="true"></i>TROCAR</a></li>
                     </ul>
                 </div>
-                <div class="part flex direita">
+                <div class="part2 flex direita">
                     <ul class="menu flex preto">
                         <li><a href="#">Acompanhar pedido</a></li>
                         <li><a href="#">Nossas Lojas</a></li>
@@ -29,9 +29,9 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="banner-2 ">
-                <div class="row conteiner flex top">
+            
+            <div class="menu-pesquisa">
+                <div class="part1 conteiner flex">
                     <div class="logo">
                         <img src="_img/logo.png">
                     </div>
@@ -43,23 +43,22 @@
                             </div>
                         </form>
                     </div>
-                    <div class="row flex">                            
-                            <!-- <li><a href="#">LISTA DE FAVORITOS</a></li>
-                            <li><a href="#">CARRINHO DE COMPRAS</a></li> -->
-                        <div class="grup-banner flex top">
+                    <div class="trio flex">                            
+                        <div class="trio-1 flex top">
                             <i class="fa fa-user fa-2x" aria-hidden="true"></i><a href="#" ><p>ENTRAR MINHA CONTA</p></a>
                         </div>                              
-                        <div class="grup-banner flex top">
+                        <div class="trio-2 flex top">
                             <i class="fa fa-heart fa-2x" aria-hidden="true"></i><a href="#" ><p>LISTA DE FAVORITOS</p></a>
                         </div>   
-                        <div class="grup-banner flex top center">
+                        <div class="trio-3 flex top">
                             <span class="carrinho">99</span>
                             <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><a href="#" ><p>CARRINHO DE COMPRAS</p></a>
                         </div>                               
                     </div>
-                </div>
-                <div class="row conteiner ">      
-                    <ul class="menu flex space cinza bottom">
+                </div>                
+                <div class="part2 conteiner ">      
+                    <!-- menu desktop -->
+                    <ul class="menu flex between cinza bottom">
                         <a class="diferente" href="#"><i class="branco margin fa fa-bars" aria-hidden="true"></i>TODAS AS CATEGORIAS<i class="branco margin-2 fa fa-angle-down" aria-hidden="true"></i></a>
                         <li><a href="#">Ofertas da semana</a></li>
                         <li><a href="#">Mais vendidos</a></li>
@@ -68,11 +67,28 @@
                         <li><a href="#">verão e jardim</a></li>
                         <li><a href="#">especial móveis</a></li>                                                                        
                         <li><a href="#">OFERTAS DA TV</a></li>
-                    </ul>
+                    </ul>        
+                    <!-- menu mobile -->
+                    <label class="lbl-menu" for="ck-menu">&#8801;</label>
+                    <input type="checkbox" id="ck-menu">
+                    <ul class="menu-mobile">
+                        <label class="lbl-fechar" for="ck-menu">x</label>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                        <li><a href="#">teste</a></li>
+                    </ul>                    
                 </div>
             </div>
         </header>
-        
+                    
         <div class="banner-principal">
             <img src="_img/banner-desktop.jpg" alt="banner" class="img-responsiva">
             <div class="veja-mais">
@@ -80,16 +96,16 @@
             </div>
         </div>
 
-        <div class="row padding-x2 flex space conteiner">
-            <div class="n1">
+        <div class="clicks padding-x2 flex between conteiner">
+            <div class="click">
                 <p><strong><a class="link1" href="#">Clique e retire.</a></strong><i class="margin margin-2 vermelho fa fa-map-marker fa-2x" aria-hidden="true"></i> Suas compras em qualquer loja A Potiguar</p>
             </div>
-            <div class="n1">
+            <div class="click">
                 <p><strong>Seu produto em <strong>até 2 horas</strong>.<i class="margin margin-2 vermelho fa fa-truck fa-2x" aria-hidden="true"></i></i><a class="link2" href="#">Clique aqui</a> e sabia mais</p>
             </div>
         </div>
 
-        <div class='icon-grup conteiner2 flex space'>
+        <div class='grupo-icones conteiner2 flex araund'>
             <figure class="top">
                 <div class="icon"><i class="fa fa-shower fa-2x" aria-hidden="true"></i></div>
                 <figcaption>
@@ -139,7 +155,7 @@
                 </figcaption>
             </figure>
         </div>
-
+<!-- ------------------------------------------------  parei aqui-->
         <div class="row top2">
             <section class="conteiner">
                 <span class="titulo ">Seleção especial para você</span>
@@ -310,7 +326,7 @@
         </div>
 
         <div class="row conteiner">
-            <div class="banners flex wrap space top2">
+            <div class="banners flex wrap between top2">
                 <div class="b1 flex">
                     <div class="logo2 flex">
                         <img src="_img/logo2.png"><div class="empresa"><span>Empresas</span></div>
@@ -507,7 +523,7 @@
                     </div>
                 </div>   
                 <div class="footer-wrapper padding-x2 conteiner flex">
-                    <div class="pedidos flex space">
+                    <div class="pedidos flex between">
                         <div>
                             <div class="pedido flex">
                                 <div><i class="margin fa fa-archive fa-2x" aria-hidden="true"></i></div>
@@ -592,7 +608,7 @@
                             <div class="flex">
                                 <div class="selos">
                                     <span>Selos e certificados</span><br><br>
-                                    <div class="dois flex space">
+                                    <div class="dois flex between">
                                         <div class="selo">
                                             <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
                                         </div>
@@ -603,7 +619,7 @@
                                 </div>
                                 <div class="redes">
                                     <span>Siga A Potiguar nas mídias</span><br><br>
-                                    <div class="sociais flex space">
+                                    <div class="sociais flex between">
                                         <div class="social">
                                             <a href="#"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i></a>
                                         </div>
