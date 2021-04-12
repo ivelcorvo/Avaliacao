@@ -222,13 +222,13 @@ a .preto{
 
 .campo-pesquisa{
     width: 100%;
-    height: 47px;
+    height: 49px;
     border: none;    
 }
 
 .pesquisa-wrapper{
     width: 709px;
-    height: 49px;
+    height: 52px;
     padding-left: 25px;
     border: 1px solid var(--corBorda);
     border-radius: 30px; 
@@ -243,6 +243,7 @@ a .preto{
     text-align: center;
     display: block;
     width: 86px;
+    height: 49px;
     background-color: var(--corPesquiza);
     border-radius:0 30px 30px 0;
     line-height: 49px;
@@ -296,7 +297,7 @@ a .preto{
 .menu-pesquisa{
     margin-bottom: 10px;
 }
-
+/* falta menu desktop */
 /* menu mobile */
 #ck-menu, .lbl-fechar, .lbl-menu, .menu-mobile{
     display: none;
@@ -342,7 +343,7 @@ a .preto{
     margin-left: 0; 
 }
 
-.menu-pesquisa .part2 menu .diferente{
+.menu-pesquisa .part2 .menu .diferente{
     color: var(--corPalavraMenu2);
     text-decoration: none;
     background-color: var(--corPesquiza);
@@ -449,38 +450,53 @@ a .preto{
         flex-wrap: wrap;
     }
 }
-/* parei aqui ======================================================================================================================== */
-/* =============================================================== */
 
+/* =============================================================== */
+/* Seleção especial para você */
+.especial section span, .item-categoria span{
+    color: var(--corPalavraMenu);
+}
+.categoria{
+    width: 100%;
+    height: auto;
+}
+.categoria .item-categoria{
+    width: 22%;
+    height: auto;
+    
+}
+@media only screen and (max-width: 500px){
+    .categoria .item-categoria{
+        width: 48%;        
+    }
+}
+
+/* =============================================================== */
+/* produtos */
 span.mostrar-mais a{
     text-decoration: none;
     color: var(--corPalavraMenu);
     margin-left: 1350PX;
 }
-
-section span{
+span.mostrar-mais i{
+    margin-left: 3px;
+}
+.produtos section span.titulo-produtos{
+    font-size: 30px;
     color: var(--corPalavraMenu);
 }
 
+/* ----------- promoção --------- */
 .item-artigo{
-    width: 25%;
-    height: auto;
-    margin: 20px;
-}
-
-/* ------------------------ */
-.item-artigo2{
     width: 20%;
     height: auto;
-    margin: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     background-color: var(--cor2);
 }
-
-.item-artigo2 s{
+.item-artigo s{
     color: var(--corPalavraMenu3)
 }
-
 .grifado{
     background-color: var(--grifado);
     color: var(--cor2)
@@ -491,13 +507,44 @@ section span{
     width: 100%;
     background-color: var(--grifado);
 }
-
-.item-artigo3{
+.item-artigo2{
     width: 20%;
     height: auto;
-    margin: 10px;
+    margin-bottom: 10px;
     background-color: var(--cor2);
     border-bottom: 2px solid var(--grifado) 
+}
+
+/* ------- mobile ------- */
+@media only screen and (max-width: 500px){
+    .produtos .artigos-produto{
+        flex-direction: column;
+    }
+    span.mostrar-mais a{
+        display: none;
+    }
+    .produtos section span.titulo-produtos{
+        font-size: 20px;
+        color: var(--corPalavraMenu);
+    }   
+
+    article.item-artigo{
+        width: 100%;
+        display: flex;
+    }
+    article.item-artigo figure, article.item-artigo2 figure{
+        width: 200px;
+    }
+    article.item-artigo figcaption, article.item-artigo2 figcaption{
+        margin: 10px 0 10px 10px ;
+    }
+
+    article.item-artigo2{
+        width: 100%;
+    }
+    article.item-artigo2 .interior{
+        display: flex;
+    }
 }
 
 /* ================================================================== */
@@ -505,191 +552,211 @@ section span{
 
 .b1{
     width: 100%;
-    height: 156px;
+    height: auto;
     background-color: var(--corPesquiza);
 }
-
-.logo2{
+.b1 .logo2{
     margin-top: 20px;
     margin-left: 30px;
     padding: 20px 0 35px;
  }
-
-.logo2 .empresa{
+ .b1 .logo2 .empresa{
     margin-top: 30px;
     margin-left: 10px;
 }
-.logo2 .empresa span{
+.b1 .logo2 .empresa span{
     color: var(--cor2);
     font-size: 20px;
 }
-
-.anuncio{
+.b1 .anuncio{
     padding: 45px 160px;
 }
-
-.anuncio span{
+.b1 .anuncio span{
     font-size: 40px;
     color: var(--cor2);
 }
-
-.anuncio p{
+.b1 .anuncio p{
     color: var(--cor2);
 }
 
 /* ------------------ */
-
 .b2{
     width: 49%;
-    height: 156px;
+    height: auto;
     background-color: var(--corPesquiza);
     margin-top: 10px;
 }
-
 .b2 .pic{
     width: 130px;
     margin: 15px;
 }
-
 .b2 .preco-anuncio{
     margin-top: 30px;
 }
-
 .b2 .preco-anuncio p{
     color: var(--cor2);
 }
-
 .b2 .mais p{
     margin-top: 45px;
     margin-left: 5px;
     font-size: 60px;
     color: var(--cor2);
 }
-
 .b2 .frete p{
-    margin-top: 20px;
-    margin-left: 5px;
+    margin: 20px 5px 0;
     font-size: 45px;
     color: var(--cor2);
 }
 
 /* ----------------------- */
-
 .b3{
     width: 49%;
-    height: 156px;
+    height: 170px;
     margin-top: 10px;
     background-color: #497dc2 ;
 }
-
 .b3 .aulas{
     margin: 20px;
 }
-
 .b3 .confira{
+
+}
+.b3 .confira a{
+    display: block;
     width: 80px;
+    height: 30px;
+    line-height: 30px;  
+    padding-left: 10px;  
+    border-radius: 30px;    
+    text-decoration: none;
     background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 30px;
+    color: var(--corPalavraMenu);
     position: relative;
     top: 30px;
     right: -100px;
 }
+.b3 .confira a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
 
-.b3 .confira a{
-    text-decoration: none;
-    color: var(--corPalavraMenu)
+/* ----------------------- */
+@media only screen and (max-width: 500px){
+    .b1{
+        display: none;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .mais p{
+        font-size: 40px;
+    }
+    .b2 .frete p{
+        font-size: 30px;
+        margin-top: 35px;
+    }
+    .b3{
+        width: 100%;
+    }
 }
 
 /* ================================== */
-/* banner final */
-.banner-final{
+/* banner eletro  */
+.banner-eletro{
     width: 100%;
-    height: 207px;
+    height: auto;
+    padding-bottom: 20px; 
     background-color: #497dc2 ;
 }
-
 .rosa{
     color: var(--cor4)
 }
-
-.eletro-sale{
+.banner-eletro .eletro-sale{
     margin-left: 700px; 
     margin-top: 20px;
 }
 
-.desconto{
+/* ---------------------- */
+.banner-eletro .desconto{
     margin-left: 10px;
     margin-top: 40px;
 }
-
-.banner-final .comprar{
+.banner-eletro .comprar a{
+    display: block;
     width: 90px;
-    background-color: var(--cor2);
-    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
     border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     margin-top: 10px;
+    text-decoration: none;
+    background-color: var(--cor2);
+    color: var(--corPalavraMenu)
+}
+.banner-eletro .comprar a:hover{
+    background-color: rgba(0,0,0,0.1);
 }
 
-.banner-final .comprar a{
-    text-decoration: none;
-    color: var(--corPalavraMenu)
+/* ---------------------- */
+@media only screen and (max-width: 500px){
+    .banner-eletro{
+        display: block;
+        padding-left: 30%;
+    }
+    .banner-eletro .eletro-sale, .banner-eletro .desconto{
+        margin: auto;
+    }
 }
 
 /* ================================================================== */
 /* footer */
+@media only screen and (max-width: 500px){
+    .banner-footer{
+        display: none;
+    }
+}
 
 .banner-footer{
-    width:  100%;
-    height: 180px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
     background-color: var(--corPesquiza);
 }
-    
-.regulamento1{
-    background-color: var(--corPalavraMenu2);
-    padding-left: 1100px;
-}
 
-.regulamento1 a{
-    text-decoration: none;
-    color: var(--cor2);
-}
-
-.regulamento1 p a{
-    text-decoration: none;
-    color: var(--cor2);
-    margin: 20px 10px 0;
-}
-
-.regulamento2 blockquote {
-    color: var(--cor3);
-}
 /*===============================================*/
 /* rodape com cadastro de email */
-
-.n2-diferente{
-    padding: 20px 10px  2px;
-    margin-right: 100px;
-}
-
-.n2-diferente blockquote.oferta1{
-    font-size:  15px;
-    color: var(--cor2);
-}
-.n2-diferente blockquote.oferta2{
-    font-size:  12.5px;
-    color: var(--cor2);
-}
-
-.n2{
-    padding: 60px 5px 2px
-}
-
 .email{
     margin: 15px;
 }
 
-.campo-email{
+.email .part1{
+    padding: 20px 10px  2px;
+    margin-right: 100px;
+}
+.email .part1 blockquote.oferta1{
+    font-size:  15px;
+    color: var(--cor2);
+}
+.email .part1 blockquote.oferta2{
+    font-size:  12.5px;
+    color: var(--cor2);
+}
+
+/* -------------------------- */
+.email .part2{
+    padding: 60px 5px 2px
+}
+.email .part2 .email-wrapper{
+    width: 609px;
+    height: 49px;        
+    border: 1px solid var(--corBorda);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;     
+    background-color: var(--cor2);
+}
+.email .part2 .email-wrapper .campo-email{
     width: 709px;
     height: 47px;
     border: none; 
@@ -697,8 +764,7 @@ section span{
     -webkit-border-radius: 30px  0  0 30px;
     -moz-border-radius: 30px  0  0 30px;
 }
-
-.btn-email{
+.email .part2 .email-wrapper .btn-email{
     color: var(--corPalavraMenu2);
     background-color: #D7DF23;
     text-align: center;
@@ -708,21 +774,11 @@ section span{
     -moz-border-radius:0 30px 30px 0;
     border: none;
 }
-
-.email-wrapper{
-    width: 609px;
-    height: 49px;        
-    border: 1px solid var(--corBorda);
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;        
-}
-
-.lbl-chek{    
+.email .part2 .checkbox .lbl-chek{    
     font-size: 10px;
     color: var(--cor2);
 }
-#check{
+.email .part2 .checkbox #check{
     width: 17px;
     height: 17px;
     margin-right: 10px;
@@ -736,24 +792,33 @@ section span{
 /* rodape com vários icones */
 
 .pedidos{
-    flex-wrap: wrap;
     width: 25%;    
     margin-right: 130px;
 }
-
 .pedido{
     margin-bottom: 40px;
 }
-
 .pedido i{
     color:var(--cor3);
 }
 .pedido p{
     color: var(--corPalavraMenu2);
 }
+@media only screen and (max-width: 500px){
+    .pedidos{
+        width: 100%;
+        padding-left: 10px;
+        margin-right: 30px; 
+    }
+    .pedidos .pedido p{
+        color: var(--cor3);
+    }
+}
 
+/* --------------------------- */
 .institucional{
-    width: 30%;
+    width: 25%;
+    margin-bottom: 30px;
 }
 .institucional span{
     font-size: 20px;
@@ -762,27 +827,90 @@ section span{
 ul.menu-institucional{
     list-style-type: none;
 }
-
 ul.menu-institucional li{
     margin-bottom: 10px;
 }
-
 ul.menu-institucional li a{
     text-decoration: none;
     color: var(--corPalavraMenu2);
 }
+ul.menu-institucional li a:hover{
+    color: var(--cor3);
+}
+@media only screen and (max-width: 500px){
+    .institucional{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .institucional span, .institucional ul.menu-institucional li a{
+        color: var(--cor3);
+    }
+    .institucional ul.menu-institucional li a:hover{
+        color: var(--corPalavraMenu2);
+    }
+}
 
+/* ================================= */
+/* atendimento (aparece no modo mobile) */
+.atendimento{
+    display: none;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.atendimento span{
+    font-size: 20px;
+    color: var(--cor3);    
+}
+.atendimento ul.contato{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.atendimento ul.contato li{
+    height: 30px;
+    color: var(--cor3);
+}
+.atendimento ul.contato li i{
+    padding-right: 5px ;
+}
+@media only screen and (max-width: 500px){
+    .atendimento{
+        display: block;
+    }
+}
+
+/*================================== */
+/* últimos icones no rodapé */
 .icones-finais{
-    width:40%;
-    
+    width:40%;  
 }
 
 .formas-pagamento span{
     font-size: 20px;
 }
-
 .formas-pagamento .cartoes .cartao{
     padding:10px;
+}
+@media only screen and (max-width: 500px){
+    .icones-finais{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .formas-pagamento span{
+        color: var(--cor3);
+    }
+    .formas-pagamento .cartoes{
+        margin-bottom: 30px;
+    }
+}
+
+/* ================================== */
+/* selos */
+@media only screen and (max-width: 500px){
+    .selos span{
+        color: var(--cor3);
+    }
 }
 
 .dois{
@@ -793,8 +921,42 @@ ul.menu-institucional li a{
     width: 60%;
     margin-left: 20px;
 }
+@media only screen and (max-width: 500px){
+    .redes{
+        display: none;
+    }
+}
 
+/*================================== */
+/* redes*/
 .social a{
     text-decoration: none;
     color: var(--corPalavraMenu2);
 }
+
+/*================================== */
+/* regulamento */
+.regulamento1{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--corPalavraMenu2);
+    padding-left: 1100px;
+}
+.regulamento1 .tech{
+    line-height: 30px;
+}
+.regulamento1 .tech a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+@media only screen and (max-width: 500px){
+    .regulamento1{
+        padding-left: 0;
+    }
+}
+
+.regulamento2 blockquote {
+    color: var(--cor3);
+}
+
